@@ -49,11 +49,13 @@ function readQmuiStyleComments(rawFiles, outputPath) {
 
 		commentsStr = commentsStr[0];	//抽取出开头/* */及其内部的内容
 
-		var introRegExp = new RegExp(currentFileData.title + '.*', 'i');	
-		var introLine = commentsStr.match(introRegExp)[0];		//抽取出类似"_effect.scss 辅助编写样式效果的工具方法"这一行的这一段信息
-		currentFileData.intro = trimString(introLine.split(currentFileData.title)[1]);		//抽取出类似"辅助编写样式效果的工具方法"这句中文介绍，去除首尾空格
-
+		var descrRegExp = new RegExp(currentFileData.title + '.*', 'i');	
+		var descrLine = commentsStr.match(descrRegExp)[0];		//抽取出类似"_effect.scss 辅助编写样式效果的工具方法"这一行的这一段信息
+		currentFileData.descr = trimString(descrLine.split(currentFileData.title)[1]);		//抽取出类似"辅助编写样式效果的工具方法"这句中文介绍，去除首尾空格
 		currentFileData.items = [];
+
+		var introLine = commentsStr.match(/@intro.*/g)[0];		//抽取出类似"@intro 数值计算"这一行
+		currentFileData.intro = trimString(introLine.split('@intro')[1]);		//抽取出类似"数值计算"这个文件的简短介绍
 
 		var commentsStrFiltered = commentsStr.replace(/(\*)|(\/)|(\n)/g, '');	//去除星号*、斜杠、换行符
 

@@ -1,7 +1,7 @@
 {
   "name": "qmui-style-comments-reader",
-  "version": "1.0.1",
-  "description": "This module could load sass files which include tool functions, and output a JSON file. Take notice that target sass files must meet code standards of QMUI for SASS.",
+  "version": "1.1.0",
+  "description": "This module could load sass files which include style-relevant comments, and output a JSON file. Take notice that comments must meet code standards of QMUI for SASS.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -10,6 +10,35 @@
   "keywords": [
     "QMUI"
   ],
-  "author": "LI Kai",
-  "license": "MIT"
+  "author": {
+    "name": "LI Kai"
+  },
+  "license": "MIT",
+  "gitHead": "ca5b32a61ab0d75b4f6cf04597b8437d0d7602de",
+  "bugs": {
+    "url": "https://github.com/hughkli/qmui-style-comments-reader/issues"
+  },
+  "homepage": "https://github.com/hughkli/qmui-style-comments-reader",
+  "_id": "qmui-style-comments-reader@1.0.0",
+  "scripts": {},
+  "_shasum": "ebaa921751c7b47c56b8c2c8cd2fa07b6c02b7a9",
+  "_from": "qmui-style-comments-reader@1.0.0",
+  "_npmVersion": "2.14.2",
+  "_nodeVersion": "4.0.0",
+  "_npmUser": {
+    "name": "hughkli",
+    "email": "471633877@qq.com"
+  },
+  "dist": {
+    "shasum": "ebaa921751c7b47c56b8c2c8cd2fa07b6c02b7a9",
+    "tarball": "http://registry.npmjs.org/qmui-style-comments-reader/-/qmui-style-comments-reader-1.0.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "hughkli",
+      "email": "471633877@qq.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/qmui-style-comments-reader/-/qmui-style-comments-reader-1.0.0.tgz"
 }
