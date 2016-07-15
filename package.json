@@ -1,11 +1,11 @@
 {
   "name": "qmui-style-comments-reader",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This module could load sass files which include style-relevant comments, and output a JSON file. Take notice that comments must meet code standards of QMUI for SASS.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hughkli/qmui-style-comments-reader"
+    "url": "git+https://github.com/QMUI/qmui-style-comments-reader"
   },
   "keywords": [
     "QMUI"
